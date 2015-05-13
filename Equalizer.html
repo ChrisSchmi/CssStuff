@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset='UTF-8'>
+
+<style>
+.loader-wrapper
+{
+	background: #000;
+	width: 60px;
+	height: 55px;
+}
+
+.loader-line {
+    -webkit-animation: equalizer 800ms infinite;
+            animation: equalizer 800ms infinite;
+	-webkit-transform-origin: bottom;
+			transform-origin: bottom;
+    height: 5px;
+    width: 5px;
+	background-color: #ffffff;
+	position: fixed;
+	top: 50px;
+}
+
+.loader-line:nth-child(1) { -webkit-animation-delay: -50ms; animation-delay: -50ms; }
+.loader-line:nth-child(2) { -webkit-animation-delay: -120ms; animation-delay: -120ms; }
+.loader-line:nth-child(3) { -webkit-animation-delay: -140ms; animation-delay: -140ms; }
+.loader-line:nth-child(4) { -webkit-animation-delay: -200ms; animation-delay: -200ms; }
+.loader-line:nth-child(5) { -webkit-animation-delay: -225ms; animation-delay: -225ms; }
+.loader-line:nth-child(6) { -webkit-animation-delay: -310ms; animation-delay: -310ms; }
+
+
+.loader-line:nth-child(1) {
+    top: 50px;
+	left: 10px;
+}
+
+.loader-line:nth-child(2) {
+    top: 50px;
+	left: 20px;
+}
+
+.loader-line:nth-child(3) {
+    top: 50px;
+	left: 30px;
+}
+
+.loader-line:nth-child(4) {
+    top: 50px;
+	left: 40px;
+}
+
+.loader-line:nth-child(5) {
+    top: 50px;
+	left: 50px;
+}
+
+.loader-line:nth-child(6) {
+    top: 50px;
+	left: 60px;
+}
+
+@-webkit-keyframes equalizer {
+  0%    { -webkit-transform: scaleY(1); }
+  20%   { -webkit-transform: scaleY(5); } 
+  40%   { -webkit-transform: scaleY(3); } 
+  60%   { -webkit-transform: scaleY(4); } 
+  80%   { -webkit-transform: scaleY(2); } 
+  100%  { -webkit-transform: scaleY(1); } 
+}
+
+@keyframes equalizer {
+  0%    { -webkit-transform: scaleY(1); }
+  20%   { -webkit-transform: scaleY(5); } 
+  40%   { -webkit-transform: scaleY(3); } 
+  60%   { -webkit-transform: scaleY(4); } 
+  80%   { -webkit-transform: scaleY(2); } 
+  100%  { -webkit-transform: scaleY(1); } 
+}
+</style>
+</head>
+<body>
+
+	<div class="loader-wrapper">
+		<div class="loader-line"></div>
+		<div class="loader-line"></div>
+		<div class="loader-line"></div>
+		<div class="loader-line"></div>
+		<div class="loader-line"></div>
+		<div class="loader-line"></div>
+	</div>			
+
+</body>
+</html>
